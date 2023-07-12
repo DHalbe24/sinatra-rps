@@ -1,0 +1,14 @@
+<!-- /views/paper.erb -->
+
+<h2>We played paper!<h2>
+
+<% if @they2 == "rock" %>
+  <h2>They played rock!</h2>
+  <h2>We won!</h2>
+<% elsif @they2 == "paper" %>
+  <h2>They played paper!</h2>
+  <h2>We tied!</h2>
+<% else %>
+  <h2>They played scissors!</h2>
+  <h2>We lost!</h2>
+<% end %>

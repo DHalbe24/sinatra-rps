@@ -12,14 +12,21 @@ get("/") do
   erb(:rules)
 end
 
+
 get("/rock") do
+  move1 = ["rock", "paper", "scissors"]
+  @they1 = move1.sample
   erb(:rock)
 end
 
 get("/paper") do
+  move2 = ["rock", "paper", "scissors"]
+  @they2 = move2.sample
   erb(:paper)
 end
 
 get("/scissors") do
+  move3 = ["rock", "paper", "scissors"]
+  @they3 = move3.sample
   erb(:scissors)
 end
